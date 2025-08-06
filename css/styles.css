@@ -1,0 +1,177 @@
+/* ====================
+   global styles
+   ==================== */
+
+:root {
+    --clr-primary-600: #1C1C1C;
+    --clr-primary-700: #000;
+
+    --clr-contrast-400: linear-gradient(90deg, #202689, #2C72F6);
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fs-300: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+    --fs-400: clamp(1.2rem, 1.0959rem + 0.5207vw, 1.4994rem);
+    --fs-500: clamp(1.44rem, 1.2457rem + 0.9717vw, 1.9988rem);
+    --fs-600: clamp(1.7281rem, 1.4025rem + 1.6283vw, 2.6644rem);
+    --fs-700: clamp(2.0738rem, 1.5596rem + 2.5707vw, 3.5519rem);
+    --fs-800: clamp(2.4881rem, 1.7066rem + 3.9076vw, 4.735rem);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 200;
+    font-size: var(--fs-300);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.dark-bg {
+    background-color: var(--clr-primary-600);
+    color: #fff;
+}
+
+/* ====================
+         typography
+         ==================== */
+
+h1 {
+    font-family: var(--ff-primary);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+h1 {
+    margin-top: 2.5rem;
+    font-size: var(--fs-800);
+    font-weight: 500;
+}
+
+h2 {
+    font-size: var(--fs-600);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: var(--fs-400);
+    font-weight: 500;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ====================
+       Layout
+       ==================== */
+
+section,
+main {
+    padding: 4rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+
+@media (min-width: 40em) {
+
+    section,
+    main {
+        padding: 7rem 0;
+    }
+}
+
+/* ====================
+    Images
+   ==================== */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ====================
+    Button
+   ==================== */
+
+button,
+.btn {
+    padding: 0.2em 1.8em;
+    font-size: 16px;
+    font-weight: 200;
+    background: var(--clr-contrast-400);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: 300ms ease;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* ====================
+   header
+   ==================== */
+
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper p {
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+
+/* ====================
+   work
+   ==================== */
+
+.project-overview {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.project-overview img {
+    margin-bottom: 2rem;
+}
