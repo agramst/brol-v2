@@ -4,41 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om oss | BROL </title>
+    <title>Om oss | BROL</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Hjem</a></li>
-                <li><a href="tjenester.html">Tjenester</a></li>
-                <li><a href="om-oss.html">Om oss</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+    <header class="light-bg">
+        <div class="container">
+            <div class="header-wrapper">
+                <p class="logo">BROL</p>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Hjem</a></li>
+                        <li><a href="tjenester.html">Tjenester</a></li>
+                        <li><a href="om-oss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1>Om oss</h1>
-
-        <section>
-            <img src="../images/intro-workplace.jpg" alt="Arbeidsmiljø">
-            <p>Vi er et kreativt team med fokus på kvalitet og samarbeid.</p>
+        <section id="about-intro" class="light-bg">
+            <div class="container text-center">
+                <h1 class="section-title">Om oss</h1>
+                <img src="../images/intro-workplace.jpg" alt="Arbeidsmiljø" class="team-banner">
+                <p class="section-content">Vi er et kreativt team med fokus på kvalitet og samarbeid.</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Tor-Magnus</h2>
-            <img src="../images/tor-magnus.jpg" alt="Tor-Magnus">
-            <p>Informasjon om Tor-Magnus og hans rolle.</p>
-        </section>
-
-        <section>
-            <h2>Andreas</h2>
-            <img src="../images/andreas.jpg" alt="Andreas">
-            <p>Informasjon om xxxx og hans rolle.</p>
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2 class="section-title text-center">Møt teamet</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <img src="../images/tor-magnus.jpg" class="team-avatar">
+                        <h3>Tor-Magnus</h3>
+                        <p>Informasjon om Tor-Magnus og hans rolle.</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="../images/ola.jpg" class="team-avatar">
+                        <h3>Ola</h3>
+                        <p>Informasjon om Ola og hans rolle.</p>
+                    </div>
+                    <!-- Add more team-card blocks if needed -->
+                </div>
+            </div>
         </section>
     </main>
 
