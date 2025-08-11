@@ -124,6 +124,14 @@ section {
     flex-direction: row-reverse;
 }
 
+.services-detail-info>div {
+    margin-bottom: 6em;
+}
+
+.services-detail-info>div:last-child {
+    margin-bottom: 0;
+}
+
 @media (min-width: 50em) {
 
     section {
