@@ -126,6 +126,7 @@ section {
 
 .services-detail-info>div {
     margin-bottom: 6em;
+    align-items: center;
 }
 
 .services-detail-info>div:last-child {
@@ -240,12 +241,11 @@ nav a:hover {
 }
 
 .project-item {
-    background: #fff;
+    background: #303030;
     border-radius: 8px;
     padding: 1.5rem;
     max-width: 300px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
     transition: transform 0.3s ease;
 }
 
@@ -254,7 +254,7 @@ nav a:hover {
 }
 
 .project-item h3 {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
 
