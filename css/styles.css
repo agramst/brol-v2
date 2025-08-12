@@ -295,10 +295,6 @@ button:hover,
 }
 
 /* ====================
-   Page: Tjenester
-==================== */
-
-/* ====================
    Services
 ==================== */
 
@@ -307,7 +303,6 @@ button:hover,
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    /* Increased gap for better spacing */
     list-style: none;
     padding-top: 1rem;
     font-weight: 300;
@@ -318,23 +313,17 @@ button:hover,
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    /* Space between icon and text */
     transition: transform 0.3s ease, color 0.3s ease;
-    /* Smooth hover effect */
 }
 
 .service-list li i {
     font-size: 1.5rem;
-    /* Icon size */
     color: var(--primary-color, #007bff);
-    /* Use a primary color variable or fallback */
 }
 
 .service-list li:hover {
     transform: translateX(0.5rem);
-    /* Slight shift on hover */
     color: var(--hover-color, #0056b3);
-    /* Darker shade on hover */
 }
 
 #services-detail p {
@@ -346,8 +335,6 @@ button:hover,
 /* ============================
    About Us Page Styling
 ============================ */
-
-/* Intro Section */
 
 #about-intro {
     padding: 5rem 0;
@@ -362,8 +349,6 @@ button:hover,
     margin-top: 2rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
-
-/* Team Section */
 
 .team-section {
     background-color: #fff;
@@ -415,8 +400,6 @@ button:hover,
     color: #555;
     line-height: 1.5;
 }
-
-/* Reuse existing utility classes */
 
 .section-title {
     margin-bottom: 2rem;
@@ -485,7 +468,6 @@ button:hover,
     margin-top: 1rem;
 }
 
-/* Adjust for smaller screens */
 @media (max-width: 480px) {
     .contact-form {
         width: 90%;
@@ -495,3 +477,59 @@ button:hover,
 /* ============================
    Animations 
 ============================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+
+@keyframes scaleFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.scale-fade-in {
+    animation: scaleFadeIn 0.7s ease forwards;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s ease forwards;
+}
+
+.fade-in-up,
+.scale-fade-in,
+.slide-in-left {
+    opacity: 0;
+}
