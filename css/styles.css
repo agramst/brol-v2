@@ -495,23 +495,6 @@ button:hover,
 }
 
 
-@keyframes scaleFadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.scale-fade-in {
-    animation: scaleFadeIn 0.7s ease forwards;
-}
-
-
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -526,10 +509,10 @@ button:hover,
 
 .slide-in-left {
     animation: slideInLeft 0.8s ease forwards;
+    display: inline-block;
 }
 
 .fade-in-up,
-.scale-fade-in,
 .slide-in-left {
     opacity: 0;
 
