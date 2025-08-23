@@ -44,6 +44,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--ff-primary);
     font-weight: 200;
@@ -443,8 +447,15 @@ button:hover,
 #services-detail p {
     margin-top: 5rem;
     text-align: center;
+    scroll-margin: 40vh 0;
 }
 
+
+#design,
+#photo-video,
+#web-solutions {
+    scroll-margin: 25vh 0;
+}
 
 /* ============================
    About Us Page Styling
