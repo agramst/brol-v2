@@ -3,11 +3,30 @@
 ==================== */
 
 :root {
-    --clr-primary-600: #1C1C1C;
-    --clr-primary-700: #000;
 
-    --clr-contrast-400: linear-gradient(90deg, #202689, #2C72F6);
-    --clr-accent: #f4f4f4;
+    /* Primary dark backgrounds */
+    --clr-primary-600: #161B22;
+    /* Secondary background (header, cards, sections) */
+    --clr-primary-700: #0D1117;
+    /* Main background */
+
+    /* Neutral accents */
+    --clr-surface: #1F2933;
+    /* Elevated surfaces like modals or cards */
+    --clr-border: #2D3748;
+    /* Dividers, borders */
+
+    /* Text colors */
+    --clr-text-primary: #E6EDF3;
+    /* High contrast text */
+    --clr-text-secondary: #9BA4B5;
+    /* Muted neutral text */
+
+    /* Accent & CTA gradient */
+    --clr-contrast-400: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+    --clr-accent: #3B82F6;
+    /* Solid accent blue for icons, hovers, or highlights */
+
 
     --ff-primary: 'Poppins', sans-serif;
 
@@ -31,8 +50,8 @@ body {
     font-size: var(--fs-300);
     line-height: 1.6;
     overflow-x: hidden;
-    background-color: #fff;
-    color: #111;
+    background-color: var(--clr-primary-700);
+    color: var(--clr-text-primary);
 }
 
 body,
@@ -45,13 +64,8 @@ ul {
     padding: 0;
 }
 
-.dark-bg {
+.secondary-bg {
     background-color: var(--clr-primary-600);
-    color: #fff;
-}
-
-.light-bg {
-    background-color: var(--clr-accent);
 }
 
 a {
@@ -60,7 +74,6 @@ a {
 }
 
 a.txt-link {
-    color: var(--clr-primary-700);
     text-decoration: underline;
 }
 
@@ -84,8 +97,8 @@ h2 {
 }
 
 h3 {
-    font-size: var(--fs-400);
-    font-weight: 500;
+    font-size: var(--fs-300);
+    font-weight: 400;
 }
 
 p {
@@ -174,16 +187,14 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 0;
+    padding: 0 0;
 }
 
 .logo {
-    font-size: var(--fs-500);
-    font-weight: 500;
-    margin: 0;
-    background: var(--clr-contrast-400);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+
 }
 
 nav ul {
@@ -198,7 +209,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #888;
+    color: var(--clr-accent);
 }
 
 
@@ -217,13 +228,12 @@ nav a:hover {
 .hero h1 {
     margin-top: 0;
     margin-bottom: 2rem;
-    color: #fff;
     line-height: 1.4;
 }
 
 .hero p {
     width: 70%;
-    color: #fff;
+    color: var(--clr-text-secondary);
 }
 
 
@@ -241,12 +251,22 @@ nav a:hover {
 }
 
 .project-item {
-    background: #303030;
+    background: var(--clr-surface);
     border-radius: 8px;
-    padding: 1.5rem;
     max-width: 300px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+}
+
+.project-item div {
+    padding: 1rem;
+}
+
+.project-item img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .project-item:hover {
@@ -254,8 +274,7 @@ nav a:hover {
 }
 
 .project-item h3 {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    color: var(--clr-text-secondary);
 }
 
 
@@ -336,11 +355,6 @@ button:hover,
    About Us Page Styling
 ============================ */
 
-#about-intro {
-    padding: 5rem 0;
-    background-color: var(--clr-accent);
-    text-align: center;
-}
 
 .team-banner {
     max-width: 100%;
@@ -351,8 +365,8 @@ button:hover,
 }
 
 .team-section {
-    background-color: #fff;
     padding: 6rem 0;
+    background: var(--clr-primary-600);
 }
 
 .team-grid {
@@ -363,15 +377,14 @@ button:hover,
 }
 
 .team-card {
-    background-color: #fff;
+    background-color: var(--clr-surface);
     padding: 2rem;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     width: 300px;
 }
 
@@ -396,8 +409,8 @@ button:hover,
 
 .team-card p {
     font-size: var(--fs-300);
+    color: var(--clr-text-secondary);
     font-weight: 200;
-    color: #555;
     line-height: 1.5;
 }
 
