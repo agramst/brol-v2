@@ -18,8 +18,14 @@
         <div class="container">
             <div class="header-wrapper">
                 <img src="/images/logo-white.svg" alt="" class="logo">
+
+                <div class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation"
+                    aria-expanded="false" role="button">
+                    <span class="sr-only">Menu</span>
+                </div>
+
                 <nav>
-                    <ul>
+                    <ul id="primary-navigation" data-visible="false" class="primary-navigation nav-flex">
                         <li><a href="/index.html">Hjem</a></li>
                         <li><a href="/pages/tjenester.html">Tjenester</a></li>
                         <li><a href="/pages/om-oss.html">Om oss</a></li>
@@ -125,7 +131,7 @@
         </section>
     </main>
 
-    <script src="js/scripts.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
