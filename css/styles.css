@@ -127,6 +127,16 @@ section {
     padding: 4rem 0;
 }
 
+section.lowtop {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+section.lowbottom {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
 .container {
     margin-inline: auto;
     width: min(90%, 70.5rem);
@@ -150,6 +160,16 @@ section {
 
     section {
         padding: 7rem 0;
+    }
+
+    section.lowtop {
+        padding-top: 3rem;
+        padding-bottom: 7rem;
+    }
+
+    section.lowbottom {
+        padding-top: 7rem;
+        padding-bottom: 3rem;
     }
 
     .split {
@@ -235,7 +255,6 @@ nav a:hover {
     width: 70%;
     color: var(--clr-text-secondary);
 }
-
 
 
 /* ====================
@@ -434,10 +453,6 @@ button:hover,
 /* ============================
    Contact Page Styling
 ============================ */
-
-#contact {
-    padding: 6rem 0;
-}
 
 .contact-form {
     max-width: 600px;
