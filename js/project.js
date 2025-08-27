@@ -1,23 +1,50 @@
 import { projects } from "./project-data.js";
 
-const params = new URLSearchParams(window.location.search);
-const projectId = parseInt(params.get("id"));
-const project = projects.find(p => p.id === projectId);
+// Same asset normalizer used in main.js
+const asset = (p) => (!p ? "" : p.startsWith("/") ? p : `/${p.replace(/^(\.\/)+/, "")}`);
 
-const container = document.getElementById("projects-container");
+// ---- Function 2: details on project page ----
+export function renderProjectDetails(selector = "#project-details") {
+  const container = document.querySelector(selector);
+  if (!container) return; // Not on the project page
 
-if (!project) {
-    container.innerHTML = `<h2>Project not found</h2>`;
-} else {
+  const params = new URLSearchParams(window.location.search);
+  const idParam = params.get("id");
+  const projectId = Number(idParam);
+
+  if (!Number.isInteger(projectId)) {
     container.innerHTML = `
+      <h2>Mangler prosjekt-ID</h2>
+      <p>Legg til ?id= i URLen, f.eks. <code>?id=1</code>.</p>
+      <p><a class="btn" href="../index.html">Tilbake til Hjem</a></p>
+    `;
+    return;
+  }
 
-    <h1>${project.title}</h1>
-    <img src="${project.fullImage}" alt="${project.title}" />
-    <p>${project.description}</p>
-    <h3>Technologies Used:</h3>
-    <ul>
-      ${project.technologies.map(tech => `<li>${tech}</li>`).join("")}
-    </ul>
-    <a href="${project.link}" target="_blank" class="btn">View Live Project</a>
+  const project = projects.find((p) => p.id === projectId);
+
+  if (!project) {
+    container.innerHTML = `
+      <h2>Prosjekt ikke funnet</h2>
+      <p>Vi fant ingen data for ID <strong>${idParam}</strong>.</p>
+      <p><a class="btn" href="../index.html">Tilbake til Hjem</a></p>
+    `;
+    return;
+  }
+
+  container.innerHTML = `
+    <article class="project-article">
+      <h1>${project.title}</h1>
+      <img class="project-hero" src="${asset(project.fullImage)}" alt="${project.title}" />
+      <p>${project.description}</p>
+      <h3>Teknologier brukt</h3>
+      <ul class="tech-list">
+        ${project.technologies.map((t) => `<li>${t}</li>`).join("")}
+      </ul>
+      <p>
+        <a href="${project.link}" target="_blank" rel="noopener" class="btn">Se live-prosjekt</a>
+        <a href="../index.html" class="btn btn-secondary">Tilbake</a>
+      </p>
+    </article>
   `;
 }
