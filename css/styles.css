@@ -372,7 +372,7 @@ a.active::after {
     transform: translateY(-5px);
 }
 
-.project-item h3 {
+.project-item p {
     color: var(--clr-text-secondary);
 }
 

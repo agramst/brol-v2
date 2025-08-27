@@ -35,12 +35,8 @@ export function renderProjectDetails(selector = "#project-details") {
   container.innerHTML = `
     <article class="project-article">
       <h1>${project.title}</h1>
-      <img class="project-hero" src="${asset(project.fullImage)}" alt="${project.title}" />
+      <img class="project-hero" src="${asset(project.fullImage)}"/>
       <p>${project.description}</p>
-      <h3>Teknologier brukt</h3>
-      <ul class="tech-list">
-        ${project.technologies.map((t) => `<li>${t}</li>`).join("")}
-      </ul>
       <p>
         <a href="${project.link}" target="_blank" rel="noopener" class="btn">Se live-prosjekt</a>
         <a href="../index.html" class="btn btn-secondary">Tilbake</a>
