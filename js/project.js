@@ -37,10 +37,6 @@ export function renderProjectDetails(selector = "#project-details") {
       <img class="project-hero" src="${asset(project.fullImage)}"/>
       <h1>${project.title}</h1>
       <p>${project.description}</p>
-      <p>
-        <a href="${project.link}" target="_blank" rel="noopener" class="btn">Se live-prosjekt</a>
-        <a href="../index.html" class="btn btn-secondary">Tilbake</a>
-      </p>
     </article>
   `;
 }

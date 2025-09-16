@@ -14,8 +14,8 @@ export const projects = [
         title: "Kverna Kaffe",
         image: "images/portfolio/kverna.jpg",
         fullImage: "images/portfolio/kverna-fullsize.jpg",
-        shortDescription: "Short description for the home page.",
-        description: "This is the full description of Project Two.",
+        shortDescription: "Visuell identitet med logo, grafisk profil og bilder som formidler stemningen rundt en kaffebedrift.",
+        description: "Vi har designet en komplett grafisk profil for en kaffebedrift, inkludert logo, farger, typografi og visuelle elementer. I tillegg har vi utviklet et bildemateriell som forsterker merkevaren og bidrar til et tydelig, helhetlig uttrykk.",
         link: "https://example.com/project-two"
     },
     {
