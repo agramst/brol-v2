@@ -6,7 +6,7 @@ const asset = (p) => (!p ? "" : p.startsWith("/") ? p : `/${p.replace(/^(\.\/)+/
 // ---- Function 2: details on project page ----
 export function renderProjectDetails(selector = "#project-details") {
   const container = document.querySelector(selector);
-  if (!container) return; // Not on the project page
+  if (!container) return;
 
   const params = new URLSearchParams(window.location.search);
   const idParam = params.get("id");
@@ -32,11 +32,17 @@ export function renderProjectDetails(selector = "#project-details") {
     return;
   }
 
+  // Generate HTML for all images
+  const imagesHtml = (project.images || [])
+    .map((img) => `<img class="project-hero" src="${asset(img)}" alt="${project.title}"/>`)
+    .join("");
+
   container.innerHTML = `
     <article class="project-article">
-      <img class="project-hero" src="${asset(project.fullImage)}"/>
-      <h1>${project.title}</h1>
+    <h1>${project.title}</h1>
       <p>${project.description}</p>
+      ${imagesHtml}
     </article>
   `;
 }
+
