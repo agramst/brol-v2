@@ -457,6 +457,17 @@ button:hover,
     scroll-margin: 25vh 0;
 }
 
+
+#photo-video a {
+    text-decoration: underline;
+}
+
+#photo-video a:hover {
+    color: var(--clr-accent);
+}
+
+
+
 /* ============================
    About Us Page Styling
 ============================ */
