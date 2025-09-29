@@ -604,6 +604,10 @@ button:hover,
    Project articles
 ============================ */
 
+.project-article img {
+    margin-bottom: 1rem;
+}
+
 .project-details p {
     margin-bottom: 4rem;
 }

@@ -15,7 +15,10 @@ export const projects = [
         title: "Kverna Kaffe",
         image: "images/portfolio/kverna.jpg",
         images: [
+            "images/portfolio/Kverna-reklame.jpg",
             "images/portfolio/kverna-fullsize.jpg"
+
+
         ],
         shortDescription: "Visuell identitet med logo, grafisk profil og bilder som formidler stemningen rundt en kaffebedrift.",
         description: "Vi har designet en komplett grafisk profil for en kaffebedrift, inkludert logo, farger, typografi og visuelle elementer. I tillegg har vi utviklet et bildemateriell som forsterker merkevaren og bidrar til et tydelig, helhetlig uttrykk.",
