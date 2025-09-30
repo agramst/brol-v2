@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: 1,
-        title: "Rainy Days",
+        title: "Zing Bryggeri",
         image: "images/portfolio/rainydays-card-1.png",
         images: [
             "images/portfolio/rainy-fullsize.jpg"
