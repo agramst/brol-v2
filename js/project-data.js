@@ -1,14 +1,15 @@
 export const projects = [
     {
         id: 1,
-        title: "Zing Bryggeri",
-        image: "images/portfolio/rainydays-card-1.png",
+        title: "Torque Garasje",
+        image: "images/portfolio/torque-card.jpg",
         images: [
-            "images/portfolio/rainy-fullsize.jpg"
+            "images/portfolio/homepage-mockup_l.jpg"
         ],
         shortDescription: "Short description for the home page.",
-        description: "This is the full description of Project One.",
-        link: "https://example.com/project-one"
+        description: "This is the full description of Project Two.",
+        link: "https://example.com/project-two"
+
     },
     {
         id: 2,
@@ -26,13 +27,14 @@ export const projects = [
     },
     {
         id: 3,
-        title: "Dale bilutleie",
-        image: "images/portfolio/rainydays-card-3.png",
+        title: "Zing Bryggeri",
+        image: "images/portfolio/rainydays-card-1.png",
         images: [
-            "images/portfolio/bil-fullsize.jpg"
+            "images/portfolio/rainy-fullsize.jpg"
         ],
         shortDescription: "Short description for the home page.",
-        description: "This is the full description of Project Two.",
-        link: "https://example.com/project-two"
+        description: "This is the full description of Project One.",
+        link: "https://example.com/project-one"
+
     }
 ];

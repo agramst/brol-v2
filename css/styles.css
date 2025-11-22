@@ -330,6 +330,7 @@ a.active::after {
     margin-top: 0;
     margin-bottom: 2rem;
     line-height: 1.4;
+    font-size: clamp(2.4881rem, 1.7066rem + 3.9076vw, 4.735rem);
 }
 
 .hero p {
