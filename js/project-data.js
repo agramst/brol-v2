@@ -4,10 +4,11 @@ export const projects = [
         title: "Torque Garasje",
         image: "images/portfolio/torque-card.jpg",
         images: [
+            "images/portfolio/service-mockup.jpg",
             "images/portfolio/homepage-mockup_l.jpg"
         ],
-        shortDescription: "Short description for the home page.",
-        description: "This is the full description of Project Two.",
+        shortDescription: "Utviklet grafisk profil og mobilvennlig nettside for enkel bestilling av bilservice.",
+        description: "Vi har utviklet et moderne grafisk uttrykk for Tourqe Garasje, inkludert logo, farger og bildestil. I tillegg er det designet en nettside og mobilvennlig løsning som gjør det enkelt å bestille bilservice, tuning og styling. Resultatet viser et helhetlig og brukervennlig digitalt uttrykk.",
         link: "https://example.com/project-two"
 
     },
