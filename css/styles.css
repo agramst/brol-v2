@@ -504,7 +504,7 @@ button:hover,
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease;
-    width: 300px;
+    width: 350px;
 }
 
 .team-card:hover {
@@ -513,8 +513,8 @@ button:hover,
 }
 
 .team-avatar {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1.2rem;
