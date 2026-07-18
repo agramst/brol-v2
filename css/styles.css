@@ -213,12 +213,12 @@ section.lowbottom {
     justify-content: space-between;
     align-items: center;
     padding: 0 0;
+    height: 80px;
 }
 
-.logo {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
+div.logo {
+    font-weight: 700;
+
 }
 
 
